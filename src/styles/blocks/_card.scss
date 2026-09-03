@@ -11,16 +11,18 @@
   flex-direction: column;
   flex-shrink: 0;
   transform-origin: center;
+  will-change: transform;
   transition: transform $transition-duration;
 
   &:hover {
     transform: scale($card-scale);
+    z-index: 1;
   }
 
   &__image {
     display: block;
-    width: 160px;
-    height: 134px;
+    width: $card-image-width;
+    height: $card-image-height;
     margin: 0 auto;
     background-image: url('../images/imac.jpeg');
     background-repeat: no-repeat;

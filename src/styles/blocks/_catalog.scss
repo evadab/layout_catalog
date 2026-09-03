@@ -2,6 +2,7 @@
 
 .catalog {
   display: grid;
+  overflow: visible;
   grid-template-columns: repeat(1, $card-width);
   gap: $catalog-row-gap $catalog-column-gap;
   justify-content: center;
